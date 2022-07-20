@@ -10,7 +10,7 @@ main{
     justify-content: space-between;
     background-color: black;
     color: antiquewhite;
-    border-radius: 15px;
+    border-radius: 15px; 
 }
 .section-header{
     width: 50%;
@@ -43,20 +43,18 @@ main{
      width: 312px;
      height: 312px;
      text-align: center; 
-     margin-top: 20px;
      border-radius: 10px;
-     padding-left: 30px;
-     padding-right: 30px;
-     padding-bottom: 30px; 
+     padding: 20px; 
 }
 .text{
-    background-color: azure;
-    width: 232px;
-    height: 64px;
-    font-size: 30px;
-    padding: 10px 10px 0 10px;
+    display: block;
+    text-decoration: none;
+    background-color: brown;
+    margin: 20px 0;
+    font-size: 25px;
+    color: azure;
+    padding: 20px;
     border-radius: 10px;
-    
 }
 #text{
     background-color: red;
@@ -64,31 +62,53 @@ main{
 .blog{
     display: flex;
 }
-.blogs-info a{
+ .blogs-info a{
     text-decoration: none;
     padding: 0 20px 5px 20px;
     border: 2px solid gray;
-    border-radius: 5px;
+    border-radius: 5px; 
 }
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
-    grid-gap: 40px;
+    text-align: center;
+    grid-gap: 30px;
 }
-.blogs-end{
+.blog-match{
+    background-color: aliceblue;
+    width: 280px;
+    height: 242px;
+    border-radius: 15px;
+}
+ .match{
+    display: flex;
+    padding: 40px 10px 20px 10px;
+}
+.match h1{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+ .blogs-end{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
 }
-.time{
-    display: block;
-    padding-right: 110px;
+.view{
+    text-align: center;
+    margin: 0 0 80px 0;
+    visibility: hidden;
 }
-.blog-end{
+.view-text{
+    display: inline;
+    border: 10px;
+    background-color: red;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 40px;
+    color: azure;
+}
 
-}
 /* section2-end */
 
 /* footer-start */
@@ -120,6 +140,7 @@ main{
 .riad{
     padding: 20px;
 }
+
 /*-----------
  footer-end 
  -----------*/
@@ -148,5 +169,8 @@ start-media-quary
     .grid-container{
         grid-template-columns: repeat(2, 1fr);
     }
-
+    .view{
+        text-align: center;
+        margin: 0 0 80px 0;
+        visibility: visible;
 }

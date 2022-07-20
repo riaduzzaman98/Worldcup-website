@@ -50,13 +50,14 @@ main{
      padding-bottom: 30px; 
 }
 .text{
-    background-color: azure;
-    width: 232px;
-    height: 64px;
-    font-size: 30px;
-    padding: 10px 10px 0 10px;
+    display: block;
+    text-decoration: none;
+    background-color: brown;
+    margin: 20px 0;
+    font-size: 25px;
+    color: azure;
+    padding: 20px;
     border-radius: 10px;
-    
 }
 #text{
     background-color: red;
@@ -86,8 +87,19 @@ main{
     display: block;
     padding-right: 110px;
 }
-.blog-end{
-
+.view{
+    text-align: center;
+    margin: 0 0 80px 0;
+    visibility: hidden;
+}
+.view-text{
+    display: inline;
+    border: 10px;
+    background-color: red;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 40px;
+    color: azure;
 }
 /* section2-end */
 
@@ -147,6 +159,9 @@ start-media-quary
     }
     .grid-container{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .view{
+        visibility: visible;
     }
 
 }
