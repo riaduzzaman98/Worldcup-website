@@ -1,0 +1,152 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    margin: 50px 140px;
+}
+/* section1-start */
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: antiquewhite;
+    border-radius: 15px;
+}
+.section-header{
+    width: 50%;
+    padding: 33px 80px 0 100px;
+}
+.photo{
+    width: 100%;
+}
+.section1-head{
+    font-size: 60px;
+}
+.live-match{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 40px;
+}
+/* section1-end */
+
+/* section2-start */
+.container-2{
+    display: flex;
+    margin-top: 50px; 
+    grid-column-gap: 10px;
+}
+.box{
+     background-color: black;
+     width: 312px;
+     height: 312px;
+     text-align: center; 
+     margin-top: 20px;
+     border-radius: 10px;
+     padding-left: 30px;
+     padding-right: 30px;
+     padding-bottom: 30px; 
+}
+.text{
+    background-color: azure;
+    width: 232px;
+    height: 64px;
+    font-size: 30px;
+    padding: 10px 10px 0 10px;
+    border-radius: 10px;
+    
+}
+#text{
+    background-color: red;
+}
+.blog{
+    display: flex;
+}
+.blogs-info a{
+    text-decoration: none;
+    padding: 0 20px 5px 20px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    grid-gap: 40px;
+}
+.blogs-end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.time{
+    display: block;
+    padding-right: 110px;
+}
+.blog-end{
+
+}
+/* section2-end */
+
+/* footer-start */
+.footer-start{
+    background-color: black;
+}
+.goal{
+    color: bisque;
+    text-align: center;
+    padding-top: 40px;
+}
+.hr-tag{
+    padding: 80px;
+}
+.footer-text{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.footers{
+    color: blanchedalmond;
+    text-decoration: none;
+    padding: 20px;
+}
+.icons{
+    color: blue;
+    text-align: center;
+    padding: 20px;
+}
+.riad{
+    padding: 20px;
+}
+/*-----------
+ footer-end 
+ -----------*/
+
+/* --------------
+start-media-quary
+------------------*/
+@media screen and (max-width: 687px){
+    .container{
+        flex-direction: column;
+    }
+    .container-2{
+        flex-direction: column;
+    }
+    .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footers{
+        display: block;
+    }
+}
+@media screen and (min-width: 687px) and (max-width: 992px){
+    .container-2{
+        flex-direction: column;
+    }
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
