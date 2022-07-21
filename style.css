@@ -30,6 +30,12 @@ main{
     border-radius: 10px;
     padding: 10px;
     font-size: 40px;
+    transition: padding 1s;
+    transition-delay: .5s;
+}
+.live-match:hover{
+    background-color: blue;
+    padding: 15px 40px;
 }
 /* section1-end */
 

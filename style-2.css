@@ -22,13 +22,26 @@ main{
 .section1-head{
     font-size: 60px;
 }
+.section1-head:hover{
+    color: blue;
+    transition: color 1s;
+}
 .live-match{
+    width: 50px;
+    height: 50px;
     text-decoration: none;
     color: aliceblue;
     background-color: red;
     border-radius: 10px;
     padding: 10px;
     font-size: 40px;
+    transition: padding 1s;
+    
+}
+.live-match:hover{
+    color: black;
+    background-color: greenyellow;
+    padding: 20px 40px;
 }
 /* section1-end */
 
